@@ -1333,7 +1333,7 @@ Window = Fluent:CreateWindow({
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl 
 })
-Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" })
+Shop = Window:AddTab({ Title = "Shop", Icon = "" })
 sex = {
     "WildDares",
     "BossBuild",
@@ -1601,7 +1601,7 @@ Shop:AddButton({
         end
     end
 })
-Server = Window:AddTab({ Title = "Tab Status And Server", Icon = "" })
+Server = Window:AddTab({ Title = "Status And Server", Icon = "" })
 Time = Server:AddParagraph({
     Title = "Time Zone",
     Content = ""
@@ -1949,7 +1949,7 @@ function Hop()
     end
     Teleport()
 end
-LGa = Window:AddTab({ Title = "Tab Local Player", Icon = "" })
+LGa = Window:AddTab({ Title = "Local Player", Icon = "" })
 LGa:AddButton({
     Title = "Stop Tween",
     Callback = function()
@@ -2718,7 +2718,7 @@ spawn(function()
         end)
     end
 end)
-Main = Window:AddTab({ Title = "Tab Farming", Icon = "" })
+Main = Window:AddTab({ Title = "Farming", Icon = "" })
 Main:AddButton({
     Title = "Copy discord invite link",
     Callback = function()
@@ -3419,7 +3419,7 @@ Toggle = Main:AddToggle("Toggle", {Title = "Skill F", Default = false })
 Toggle:OnChanged(function(Value)
     getgenv().SkillF = Value
 end)
-Stack = Window:AddTab({ Title = "Tab Stack Farm", Icon = "" })
+Stack = Window:AddTab({ Title = "Stack Farm", Icon = "" })
 Dropdown = Stack:AddDropdown("DropdownFarm", {
     Title = "Select Melee",
     Values = {"Superhuman", "DeathStep", "Sharkman Karate", "Electric Claw", "Dragon Talon", "GodHuman"},
@@ -4295,7 +4295,7 @@ spawn(function()
         end
     end
 end)
-Other = Window:AddTab({ Title = "Tab Farming Other", Icon = "" })
+Other = Window:AddTab({ Title = "Farming Other", Icon = "" })
 Other:AddParagraph({
         Title = "Quest Dragon",
         Content = ""
@@ -4880,7 +4880,7 @@ spawn(function()
         end
     end
 end)
-Blog = Window:AddTab({ Title = "Tab Fruit And Raid", Icon = "" })
+Blog = Window:AddTab({ Title = "Fruit And Raid", Icon = "" })
 Toggle = Blog:AddToggle("Toggle", {Title = "Random Devil Fruit", Default = false })
 Toggle:OnChanged(function(Value)
     getgenv().RandomFruit = Value
@@ -5184,7 +5184,7 @@ Blog:AddButton({
     end
 })
 end
-Sea = Window:AddTab({ Title = "Tab Sea Event", Icon = "" })
+Sea = Window:AddTab({ Title = "Sea Event", Icon = "" })
 SetSpeedBoatSlider = Sea:AddSlider("SliderSpeedBoat", {
 	Title = "Ship Speed",
 	Default = 300,
@@ -6085,7 +6085,7 @@ task.spawn(function()
         end
     end
 end)
-ChooseSkill = Window:AddTab({ Title = "Tab Setting Select Skill", Icon = "" })
+ChooseSkill = Window:AddTab({ Title = "Setting Select Skill", Icon = "" })
 ChooseSkill:AddParagraph({
     Title = "Setting Sea Event",
     Content = string.rep("-", 21)
@@ -6270,7 +6270,7 @@ task.spawn(function()
         end)
     end
 end)
-Volcanic = Window:AddTab({ Title = "Tab Volcanic Event", Icon = "" })
+Volcanic = Window:AddTab({ Title = "Volcanic Event", Icon = "" })
 Volcanic:AddButton({
 	Title = "Destroy Lava In Prehistoric Island",
 	Callback = function()
@@ -6520,7 +6520,7 @@ Toggle = Volcanic:AddToggle("Toggle", {
 Toggle:OnChanged(function(v404)
     getgenv().UseGun = v404
 end)
-Race = Window:AddTab({ Title = "Tab Upgrade Race", Icon = "" })
+Race = Window:AddTab({ Title = "Upgrade Race", Icon = "" })
 Race:AddParagraph({
     Title = "Race Draco",
     Content = string.rep("-", 21)
@@ -7134,7 +7134,7 @@ spawn(function()
         end
     end
 end)
-Get = Window:AddTab({ Title = "Tab Get Items And Buy", Icon = "" })
+Get = Window:AddTab({ Title = "Get Items And Buy", Icon = "" })
 Toggle = Get:AddToggle("Toggle", {Title = "Auto Trade Bone", Default = false})
 Toggle:OnChanged(function(Value)
     getgenv().AutoTradeBone = Value
@@ -7617,7 +7617,7 @@ spawn(function()
         end
     end
 end)
-ESP = Window:AddTab({ Title = "Tab ESP", Icon = "" })
+ESP = Window:AddTab({ Title = "ESP", Icon = "" })
 local RunService = game:GetService("RunService")
 local player = game:GetService("Players").LocalPlayer
 local IslandESP = false
